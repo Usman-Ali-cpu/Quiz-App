@@ -23,30 +23,31 @@
         android:id="@+id/btnsky"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:text="Sky"
-        app:layout_constraintBottom_toTopOf="@+id/reset"
-        app:layout_constraintEnd_toStartOf="@+id/btngrass"
-        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtview1" />
+        app:layout_constraintTop_toTopOf="@+id/btngrass" />
 
     <Button
         android:id="@+id/btngrass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
         android:text="Grass"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnsky"
-        tools:layout_editor_absoluteX="162dp" />
+        app:layout_constraintEnd_toStartOf="@+id/btnroot"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toEndOf="@+id/btnsky"
+        app:layout_constraintTop_toBottomOf="@+id/txtview1" />
 
     <Button
         android:id="@+id/btnroot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
         android:text="Root"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btngrass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toEndOf="@+id/btngrass" />
+        app:layout_constraintTop_toTopOf="@+id/btngrass" />
 
     <TextView
         android:id="@+id/textview2"
